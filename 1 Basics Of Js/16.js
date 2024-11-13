@@ -6,14 +6,16 @@ let guess = +prompt("Enter the number")
 
 
 // for too high 
-if(num<guess){
-    console.log("Its Too high")
+if(num===guess){
+    console.log("You wan this game !!!")
 }
 // for too low
-else if(num>guess){
-    console.log("Its Too low")
-}
-// fow winning
-else{
-    console.log("Congratulations You Won!!")
+else {
+    if(num>guess){
+        console.log("Its Too low")
+    }
+    // fow winning
+    else{
+        console.log("Its Too high")
+    }
 }
